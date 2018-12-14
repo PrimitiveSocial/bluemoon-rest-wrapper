@@ -1,0 +1,45 @@
+{
+    "name": "primitivesocial/bluemoonwrapper",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Primitive Social",
+            "email": "hello@primitivesocial.com",
+            "homepage": "https://primitivesocial.com"
+        }
+    ],
+    "homepage": "https://github.com/primitivesocial/bluemoonwrapper",
+    "keywords": ["Laravel", "BlueMoonWrapper"],
+    "require": {
+        "illuminate/support": "~5",
+        "guzzlehttp/guzzle": "^6.3",
+        "nesbot/carbon": "^1.26.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PrimitiveSocial\\BlueMoonWrapper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PrimitiveSocial\\BlueMoonWrapper\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PrimitiveSocial\\BlueMoonWrapper\\BlueMoonWrapperServiceProvider"
+            ],
+            "aliases": {
+                "BlueMoonWrapper": "PrimitiveSocial\\BlueMoonWrapper\\Facades\\BlueMoonWrapper"
+            }
+        }
+    }
+}
