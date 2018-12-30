@@ -7,7 +7,7 @@ Wrapper around the Bluemoon REST API for Laravel.
 ### Via Composer
 
 ``` bash
-$ composer require primitivesocial/bluemoonrestwrapper
+$ composer require primitivesocial/bluemoonwrapper
 ```
 
 ### Via composer.json file for git repo
