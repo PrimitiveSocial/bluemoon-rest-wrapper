@@ -31,7 +31,7 @@ class BlueMoonWrapperServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/bluemoonwrapper.php', 'bluemoonwrapper');
+        $this->mergeConfigFrom(__DIR__.'/../config/bluemoon.php', 'bluemoon');
 
         // Register the service the package provides.
         $this->app->singleton('bluemoonwrapper', function ($app) {
@@ -58,8 +58,8 @@ class BlueMoonWrapperServiceProvider extends ServiceProvider
     {
         // Publishing the configuration file.
         $this->publishes([
-            __DIR__.'/../config/bluemoonwrapper.php' => config_path('bluemoonwrapper.php'),
-        ], 'bluemoonwrapper.config');
+            __DIR__.'/../config/bluemoon.php' => config_path('bluemoon.php'),
+        ], 'bluemoon.config');
 
         // Publishing the views.
         /*$this->publishes([
