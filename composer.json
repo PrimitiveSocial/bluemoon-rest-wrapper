@@ -1,7 +1,7 @@
 {
     "name": "primitivesocial/bluemoonwrapper",
-    "description": ":description",
-    "license": "license",
+    "description": "Bluemoon REST API Wrapper",
+    "license": "MIT",
     "authors": [
         {
             "name": "Primitive Social",
@@ -10,7 +10,7 @@
         }
     ],
     "homepage": "https://github.com/primitivesocial/bluemoonwrapper",
-    "keywords": ["Laravel", "BlueMoonWrapper"],
+    "keywords": ["Laravel", "BlueMoon", "REST", "API"],
     "require": {
         "illuminate/support": "~5",
         "guzzlehttp/guzzle": "^6.3",
